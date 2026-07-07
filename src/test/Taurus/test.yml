@@ -1,0 +1,11 @@
+execution:
+  - executor: playwright
+    concurrency: 1
+    ramp-up: 15s
+    hold-for: 2m
+    iteration: 1
+    scenario: login-test
+
+scenarios:
+  login-test:
+    script: ./test/java/LoginTest
